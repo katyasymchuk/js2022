@@ -186,41 +186,40 @@
 
 
 
-// function popelushka(name, age, size) {
-//     this.name = name;
-//     this.age = age;
-//     this.size = size;
-// }
-//
-// let Girls = [];
-// Girls[0] = new popelushka('Anna', 21, 30);
-// Girls[1] = new popelushka('Katya', 21, 32);
-// Girls[2] = new popelushka('Vika', 21, 31);
-// Girls[3] = new popelushka('Diana', 21, 33);
-// Girls[4] = new popelushka('Oksana', 21, 34);
-// Girls[5] = new popelushka('Alisa', 21, 35);
-// Girls[6] = new popelushka('Nastya', 21, 36);
-// Girls[7] = new popelushka('Sasha', 21, 37);
-// Girls[8] = new popelushka('Eva', 21, 38);
-// Girls[9] = new popelushka('Masha', 21, 40);
-//
-// console.log(Girls);
-//
-// function princ(name, age, sizeshoe) {
-//
-//     this.name = name;
-//     this.age = age;
-//     this.sizeshoe = sizeshoe;
-// }
-// // Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
-// let Princ = new princ('Nikita', 23, 32);
-// console.log(Princ);
-//
-// //     За допомоги циклу знайти яка попелюшка повинна бути з принцом.
-// //
-// for(let i=0;i<Girls.length;i++){
-// if(Girls.size===this.sizeshoe){
-//     console.log(`${Girls['name']} &&  ${Princ['name']}   love`)
-// }
-// } // Не вийшло докінця
+function popelushka(name, age, size) {
+    this.name = name;
+    this.age = age;
+    this.size = size;
+}
 
+let Girls = [];
+Girls[0] = new popelushka('Anna', 21, 30);
+Girls[1] = new popelushka('Katya', 21, 32);
+Girls[2] = new popelushka('Vika', 21, 31);
+Girls[3] = new popelushka('Diana', 21, 33);
+Girls[4] = new popelushka('Oksana', 21, 34);
+Girls[5] = new popelushka('Alisa', 21, 35);
+Girls[6] = new popelushka('Nastya', 21, 36);
+Girls[7] = new popelushka('Sasha', 21, 37);
+Girls[8] = new popelushka('Eva', 21, 38);
+Girls[9] = new popelushka('Masha', 21, 40);
+
+console.log(Girls);
+
+function princ(name, age, sizeshoe) {
+
+    this.name = name;
+    this.age = age;
+    this.sizeshoe = sizeshoe;
+}
+// Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
+let Princ = new princ('Nikita', 23, 32);
+console.log(Princ);
+
+//     За допомоги циклу знайти яка попелюшка повинна бути з принцом.
+
+for (const girl of Girls){
+    if (Princ.sizeshoe === girl.size){
+        console.log(`${girl.name} and  ${Princ.name}   love`)
+    }
+}
