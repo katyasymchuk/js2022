@@ -1,0 +1,38 @@
+.Member{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+img{
+    width: 300px;
+    height: 500px;
+}
+.arrays{
+    width: 100%;
+
+}
+.box{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+
+}
+.box >p{
+    margin: 20px;
+    padding: 10px 100px 10px 100px;
+    border: 2px solid black;
+}
+.arrays > h3{
+    padding: 10px;
+    background: darkslateblue;
+    border: 2px solid black;
+    text-align: center;
+
+}
+.arrays > li{
+    border: 2px solid black;
+    margin: 20px;
+    padding: 10px;
+}
