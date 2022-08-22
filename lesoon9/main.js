@@ -189,7 +189,6 @@
 
 
 
-
 // ------------------
 //     - створити блок,
 //     - додати йому класи wrap, collapse, alpha, beta
@@ -197,6 +196,46 @@
 // - додати цей блок в body.
 // - клонувати його повністю, та додати клон в body.
 //
+// document.body.onload = addElement;
+// var my_div = newDiv = null;
+//
+// function addElement() {
+//
+//     var newDiv = document.createElement("div");
+//     newDiv.classList.add('new');
+//
+//     let div1 = document.createElement("div");
+//     div1.classList.add('wrap')
+//     div1.innerHTML = "<h1>wrap</h1>";
+//     newDiv.appendChild(div1);
+//
+//     let div2 = document.createElement("div");
+//     div2.style.background = 'green';
+//     div2.style.color =  'yellow';
+//     div2.classList.add('collapse')
+//     div2.innerHTML = "<h1>collapse</h1>";
+//     newDiv.appendChild(div2);
+//
+//     let div3 = document.createElement("div");
+//     div3.style.background = 'yellow';
+//     div3.style.color =  'green';
+//     div3.classList.add('alpha')
+//     div3.innerHTML = "<h1>alpha</h1>";
+//     newDiv.appendChild(div3);
+//
+//     let div4 = document.createElement("div");
+//     div4.style.background = 'blue';
+//     div4.style.color =  'white';
+//     div4.style.fontSize = "25px";
+//     div4.classList.add('beta')
+//     div4.innerHTML = "<h1>beta</h1>";
+//     newDiv.appendChild(div4);
+//
+//     document.body.insertBefore(newDiv, my_div);
+//
+//     const NewDiv = newDiv.cloneNode( true );
+//     document.body.appendChild( NewDiv );
+// }
 
 
 
@@ -206,6 +245,10 @@
 // Взяти файл template1.html та додати в нього скріпт котрий для кожного елементу масиву створює li та додає його до блоку .menu
 // Завдання робити через цикли.
 //
+
+
+
+
 // - Є масив
 // let coursesAndDurationArray = [
 //     {title: 'JavaScript Complex', monthDuration: 5},
@@ -218,6 +261,8 @@
 // Для кожного елементу масиву зробити блок в якому вивести інформацію про title та monthDuration
 // Завдання робити через цикли.
 //
+
+
 // - Є масив
 // let coursesAndDurationArray = [
 //     {title: 'JavaScript Complex', monthDuration: 5},
@@ -229,6 +274,9 @@
 // ];
 //
 //
+
+
+
 // За допомоги скріпта для кожного елементу масиву зробити <div class='item'> ,  в якому буде <h1 class='heading'>  з title  елементу, та <p class='description'> з monthDuration елементу.
 //     Завдання робити через цикли.
 //
